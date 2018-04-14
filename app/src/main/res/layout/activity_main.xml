@@ -16,7 +16,6 @@
 
         <TextView
             android:id="@+id/txtCurrentTemp"
-            android:text="20°"
             android:layout_marginTop="56dp"
             android:gravity="center"
             android:textColor="#2A2A2A"
@@ -30,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtCurrentTemp"
-            android:text="Bangalore"
             android:gravity="center"
             android:layout_marginTop="16dp"
             android:textSize="36sp"
@@ -43,7 +41,9 @@
             android:layout_marginTop="88dp"
             android:layout_below="@+id/txtCurrentCity"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layoutAnimation="@anim/layout_anim"
+            android:layout_height="match_parent"
+            android:visibility="gone">
 
         </android.support.v7.widget.RecyclerView>
 

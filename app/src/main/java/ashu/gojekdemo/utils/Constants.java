@@ -5,4 +5,7 @@ package ashu.gojekdemo.utils;
  */
 
 public class Constants {
+
+    public static final String base_url = "http://api.apixu.com/v1/";
+
 }
