@@ -22,7 +22,11 @@ public class WeatherDTO implements Parcelable{
     @Expose
     private ForeCastDTO forecast;
 
-    protected WeatherDTO(Parcel in) {
+    public WeatherDTO(){
+
+    }
+
+    public WeatherDTO(Parcel in) {
         current = in.readParcelable(CurrentDTO.class.getClassLoader());
     }
 

@@ -21,7 +21,7 @@ public class CurrentDTO implements Parcelable{
     @Expose
     private Integer tempC;
 
-    protected CurrentDTO(Parcel in) {
+    public CurrentDTO(Parcel in) {
         this.tempC = in.readInt();
     }
 
