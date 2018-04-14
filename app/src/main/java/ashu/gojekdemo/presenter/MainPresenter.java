@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
@@ -77,8 +78,8 @@ public class MainPresenter implements OnCompleteListener<Location>, Callback<Wea
         dialog = new Dialog (context);
         dialog.requestWindowFeature (Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.loader);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.setCancelable(false);
-        dialog.getWindow ().setBackgroundDrawableResource (android.R.color.transparent);
         dialog.show ();
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
@@ -92,6 +93,8 @@ public class MainPresenter implements OnCompleteListener<Location>, Callback<Wea
     }
 
     public void onPause(){
+        if(dialog.isShowing())
+            dialog.dismiss();
     }
 
     public void requestNetworkCall(String city) {

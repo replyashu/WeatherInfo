@@ -75,6 +75,24 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        presenter.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        presenter.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        presenter.onDestroy();
+        super.onDestroy();
+    }
+
+    @Override
     public void populateData(WeatherDTO weatherDTO, String city) {
 
         int[] ATTRS = new int[]{android.R.attr.listDivider};
