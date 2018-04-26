@@ -10,7 +10,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
-import ashu.gojekdemo.view.MainActivity;
+import ashu.gojekdemo.main.MainActivity;
 
 import static org.junit.Assert.assertEquals;
 

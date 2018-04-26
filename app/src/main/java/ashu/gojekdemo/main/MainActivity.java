@@ -1,11 +1,10 @@
-package ashu.gojekdemo.view;
+package ashu.gojekdemo.main;
 
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,13 +14,9 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import ashu.gojekdemo.R;
 import ashu.gojekdemo.adapter.ForecastAdapter;
 import ashu.gojekdemo.model.WeatherDTO;
-import ashu.gojekdemo.presenter.MainPresenter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

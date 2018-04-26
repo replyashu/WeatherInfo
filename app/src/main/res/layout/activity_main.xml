@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ashu.gojekdemo.view.MainActivity">
+    tools:context="ashu.gojekdemo.main.MainActivity">
 
     <RelativeLayout
         android:id="@+id/relPositive"

@@ -1,4 +1,4 @@
-package ashu.gojekdemo.view;
+package ashu.gojekdemo.main;
 
 import ashu.gojekdemo.model.WeatherDTO;
 

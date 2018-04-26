@@ -1,35 +1,17 @@
-package ashu.gojekdemo.presenter;
+package ashu.gojekdemo.main;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.Application;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
-import android.location.Criteria;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Bundle;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.Window;
-import android.widget.ProgressBar;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
 import java.io.IOException;
@@ -40,14 +22,11 @@ import ashu.gojekdemo.R;
 import ashu.gojekdemo.model.WeatherDTO;
 import ashu.gojekdemo.network.NetworkInterface;
 import ashu.gojekdemo.network.NetworkService;
-import ashu.gojekdemo.view.MainActivity;
-import ashu.gojekdemo.view.MainView;
+import ashu.gojekdemo.main.MainView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-
-import static android.content.Context.LOCATION_SERVICE;
 
 /**
  * Created by apple on 12/04/18.

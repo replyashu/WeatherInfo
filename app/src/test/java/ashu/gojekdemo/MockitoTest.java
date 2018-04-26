@@ -7,9 +7,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import ashu.gojekdemo.presenter.MainPresenter;
-import ashu.gojekdemo.view.MainActivity;
-import ashu.gojekdemo.view.MainView;
+import ashu.gojekdemo.main.MainPresenter;
+import ashu.gojekdemo.main.MainActivity;
+import ashu.gojekdemo.main.MainView;
 
 /**
  * Created by apple on 15/04/18.
